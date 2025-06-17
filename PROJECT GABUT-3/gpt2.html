@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contoh Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      background-color: #f1f1f1;
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    .section img {
+      width: 250px;
+      border-radius: 10px;
+    }
+
+    .section .text {
+      max-width: 500px;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="section">
+    <img src="/ALI91966-removebg-preview.png" alt="Gambar Contoh">
+    <div class="text">
+      <h2>Selamat Datang!</h2>
+      <p>Ini adalah contoh bagaimana gambar dan teks bisa ditampilkan secara berdampingan menggunakan Flexbox di CSS.</p>
+    </div>
+  </section>
+
+</body>
+</html>
